@@ -421,6 +421,27 @@ header {
     margin-top: -210px;
     min-height: 100vh;
 
+  .dropdown-content {
+    display: none;
+    //position: absolute;
+    background-color: white;
+    min-width: 60px;
+    overflow: auto;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    float: right;
+    margin-right: 70px;
+    margin-top: -95px;
+  }
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
     .breadcrumb {
         background-color: #e4e6eb;
         padding: 20px;
@@ -505,7 +526,7 @@ header {
                 color: white;
             }
         }
-
+        
 
     }
 }
@@ -734,6 +755,7 @@ header {
         margin-bottom: 0;
     }
 }
+
 
 @media all and (max-width: 1000px) {
   .image-wrap {
