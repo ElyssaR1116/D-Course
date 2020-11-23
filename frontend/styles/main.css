@@ -521,6 +521,14 @@ header .btn-get-started:hover {
   border-top: none;
 }
 
+.tabcontent .table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px;
+  text-align: left;
+  margin-top: 15px;
+}
+
 .section-tukar-header {
   min-height: 310px;
   margin-top: -80px;
