@@ -38,3 +38,7 @@ function openInfo(evt, cityName) {
       }
     }
   }
+
+  function myFunction(x) {
+    x.classList.toggle("fa-star");
+  }
