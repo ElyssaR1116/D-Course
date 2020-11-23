@@ -83,73 +83,75 @@
                     <div class="col p-0">
                         <nav>
                             <ol class="breadcrumb">
+                                <a href="mycourse.html"><button id="back" style="margin-left: 190px; padding-right: 5px; margin-right: 20px; margin-left: -5px; border-color: rgba(0, 0, 0, 0.089);"><i class="fa fa-arrow-left"></i>  Kembali</button></a>
                                 <li class="breadcrumb-item">
                                     Beranda
                                 </li>
                                 <li class="breadcrumb-item">
                                     Kursus Ku
                                 </li>
-                                <li class="breadcrumb-item active">
+                                <li class="breadcrumb-item">
                                     Strategi Mengajar Online Dengan Webex
                                 </li>
-                                <br><br><br><br><br>
+                                <li class="breadcrumb-item active">
+                                    Tambah Konten
+                                </li>
                             </ol>
                         </nav>
-                        <img src="frontend/images/konten1.png" alt="User"
-                            class="" style="width: 13%; height: 50%; margin-top: -105px; margin-left: 65px; float: left; background-color: white; border: #331600;"> 
-                       <p style="float: right; margin-top: -110px; margin-right: 848px; font-size: medium; font-family: sans-serif; color: grey;"> Umum</p>
-                       <b><p style="float: right; margin-top: -85px; margin-right: 550px; font-size: large; font-family: sans-serif;"> Strategi Mengajar Online Dengan Webex</p></b>
-                       <p style="float: right; margin-top: -58px; margin-right: 695px; font-size: medium; font-family: sans-serif;"> Disusun oleh: Soraya Andini</p> 
-                       <b><p style="float: right; margin-top: -25px; margin-right: 765px; font-size: small; font-family: sans-serif;"> <i class="fa fa-users"></i> &nbsp; 1235 Pengunjung</p></b>  
-                       <div class="dropdown">
-                        <button onclick="myMenu()" class="menu" style="float: right; margin-top: -138px; margin-right: 70px; font-family: sans-serif; background-color: #e4e6eb; border-color: transparent;" ><i class="fa fa-ellipsis-v fa-2x"></i></button>
-                        <div id="myDropdown" class="dropdown-content">
-                          <a href="#ubah"><i class="fa fa-edit"></i> &nbsp; Ubah</a>
-                          <a href="#hapus"><i class="fa fa-trash"></i> &nbsp; Hapus</a>
-                          <a href="#bagikan"><i class="fa fa-share-alt"></i> &nbsp; Bagikan</a>
-                        </div>
-                    </div>
-                       <br><br><br><br>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <a href="addcontent.html"><button style="float: right; margin-top: 10px; margin-right: 30px; background-color: #ff9e53; border-color: #ff9e53; color: rgba(255, 255, 255, 0.911);"><i class="fa fa-plus"></i> Tambah</button></a>
-                <div class="tab">
-                    <button class="tablinks" onclick="openInfo(event, 'Informasi')">Informasi</button>
-                    <button class="tablinks" onclick="openInfo(event, 'Konten Kursus')">Konten Kursus</button>
-                    <button class="tablinks" onclick="openInfo(event, 'Forum Diskusi')">Forum Diskusi</button>
-                  </div>
-                  <div id="Informasi" class="tabcontent">
-                    <h3 class="tabcontent-active">Informasi</h3>
-                    <p></p>
-                  </div>
-                  
-                  <div id="Konten Kursus" class="tabcontent">
-                    <table class="table">
-                        <tr>
-                            <th style="background-color: #e4e6eb;">Part 1: Pengenalan Webex <button style="float: right; background-color: #e4e6eb; border-color: transparent;"><i class="fa fa-ellipsis-v fa-lg"></i></button></th>
-                        </tr>
-                        <tr>
-                            <td><a href="#" style="color: black;">1. Cara Install & Membuat Akun Webex </a><button style="float: right; background-color: white; border-color: transparent;"><i class="fa fa-ellipsis-v fa-lg"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" style="color: black;">2. Informasi & Fitur-Fitur Webex </a><button style="float: right; background-color: white; border-color: transparent;"><i class="fa fa-ellipsis-v fa-lg"></i></button></td>
-                        </tr>
-                    </table>
-                    <br>
-                    <table class="table">
-                        <tr>
-                            <th style="background-color: #e4e6eb;">Part 2: Cara Menyelenggarakan Meeting <button style="float: right; background-color: #e4e6eb; border-color: transparent;"><i class="fa fa-ellipsis-v fa-lg"></i></button></th>
-                        </tr>
-                    </table>
-                  </div>
-                  
-                  <div id="Forum Diskusi" class="tabcontent">
-                    <h3>Forum Diskusi</h3>
-                    <p></p>
-                  </div>
-
+                <div class="row">
+                    <div class="col-lg-12 pl-lg-0">
+                        <div class="card card-reward-details">
+                            <h1 style="margin-left: 10px;">Buat Kursus</h1>
+                            <hr style="width: 25%; border-color: gray; text-align: left; border-width: 3px; margin-top: 0px; margin-left: 10px;">
+                            <section class="section-product-content" id="rewardsContent">
+                                <div class="container">
+                                    <div class="section-rewards-product row">
+                                        <div class="col-sm-4 col-md-6 col-lg-3">
+                                            <div class="gallery">
+                                                    <img src="frontend/images/konten1.png" id="coursepict" style="width: 110%; height: 242px; margin-top: 7px; padding-right: 20px; float: left;">
+                                                    <div>
+                                                        <button id="changepicture" style="background-color: transparent; border-color: transparent; margin-top: -20px; margin-right: -18px; float: right;"><i class="fa fa-edit fa-2x"></i></button>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-8 col-md-6 col-lg-9">
+                                            <h3>Nama Kursus</h3>
+                                            <div class="form-group">
+                                                <input type="text" name="Nama Kursus" class="form-control" placeholder="Masukkan Nama Kursus Anda">
+                                            </div>
+                                            <h3>Kategori Kursus</h3>
+                                            <div class="form-group">
+                                                <input type="text" name="Kategori Kursus" class="form-control" placeholder="Masukkan Kategori Kursus Anda">
+                                            </div>
+                                            <h3>Penyusun</h3>
+                                            <div class="form-group">
+                                                <input type="text" name="Penyusun" class="form-control" placeholder="Masukkan Nama Penyusun Kursus">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="col-lg-11 col-md-5 col-sm-12 col-xs-12">
+                                <div class="panel panel-danger">
+                                    <div class="panel-body">
+                                        <form id="form" style="margin-left: -5px">
+                                            <h3 style="font-size: 25px">Informasi</h3>
+                                            <hr style="width: 45%; border-color: gray; text-align: left; border-width: 3px; margin-top: 0px; margin-left: 0px;">
+                                             <div class="form-group">
+                                                 <textarea id="informasi" name="informasi" rows="6" cols="50" style="width: 110%;" placeholder="Masukkan Informasi Mengenai Kursus"></textarea>
+                                             </div>    
+                                        </form>
+                                        <div class="form-group">
+                                            <a href="creatorpage.html"><button id="tambahkan" class="btn btn-tambahkan">Tambahkan</button></a>
+                                       </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
