@@ -436,6 +436,11 @@ header .btn-get-started:hover {
   color: #331600;
 }
 
+.section-reward-details-content .dark-mode {
+  background-color: black;
+  color: white;
+}
+
 .section-reward-details-content .card-reward-details {
   padding: 30px;
   border-radius: 11px;

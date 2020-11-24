@@ -39,6 +39,38 @@ function openInfo(evt, cityName) {
     }
   }
 
-  function myFunction(x) {
-    x.classList.toggle("fa-star");
+ /* $(document).ready(function(){
+    $("#showbtn2").click(function(){
+        $("#show4").css("display","block");
+        $("#show5").css("display","block");
+    });
+    $("#showbtn2").click(function(){
+      $("show4").hide();
+      $("show5").hide();
+    });
+});*/
+
+function myFunction() {
+  var x = document.getElementById("show4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
   }
+  var x = document.getElementById("show5");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+jQuery(function($) {
+  $('#showbtn2').on('click', function() {
+    var $el = $(this),
+      textNode = this.lastChild;
+    $el.find('i').toggleClass('fa-chevron-down fa-chevron-up');
+    textNode.nodeValue =($el.hasClass('showDown') ? 'Down' : 'Up')
+    $el.toggleClass('showDown');
+  });
+});
