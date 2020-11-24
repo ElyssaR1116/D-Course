@@ -103,52 +103,40 @@
                 <div class="row">
                     <div class="col-lg-12 pl-lg-0">
                         <div class="card card-reward-details">
-                            <h1 style="margin-left: 10px;">Buat Kursus</h1>
-                            <hr style="width: 25%; border-color: gray; text-align: left; border-width: 3px; margin-top: 0px; margin-left: 10px;">
+                            <h1 style="margin-left: 15px;">Tambahkan Konten</h1>
+                            <hr style="width: 25%; border-color: gray; text-align: left; border-width: 3px; margin-top: 0px; margin-left: 15px;">
                             <section class="section-product-content" id="rewardsContent">
+                                <div class="col-sm-4 col-md-6 col-lg-3" style="float: right;">
+                                    <div class="vl" style="border-left: 3px solid black; height: 350px; margin-left: -90px;"> 
+                                    </div>
+                                    <div class="gallery">
+                                        <img src="frontend/images/konten1.png" id="coursepict" style="width: 110%; height: 242px; margin-top: -350px; padding-right: 20px; float: right;">
+                                    </div>
+                                    <div class="form-group">
+                                        <a href="creatorpage.html"><button id="batalkan" class="btn btn-tambahkan" style="margin-top: 100px; margin-right: 160px; float: right; background-color: red; width: 120px;">Batalkan</button></a>
+                                   </div>
+                                </div>
                                 <div class="container">
                                     <div class="section-rewards-product row">
-                                        <div class="col-sm-4 col-md-6 col-lg-3">
-                                            <div class="gallery">
-                                                    <img src="frontend/images/konten1.png" id="coursepict" style="width: 110%; height: 242px; margin-top: 7px; padding-right: 20px; float: left;">
-                                                    <div>
-                                                        <button id="changepicture" style="background-color: transparent; border-color: transparent; margin-top: -20px; margin-right: -18px; float: right;"><i class="fa fa-edit fa-2x"></i></button>
-                                                    </div>
-                                            </div>
-                                        </div>
                                         <div class="col-sm-8 col-md-6 col-lg-9">
-                                            <h3>Nama Kursus</h3>
-                                            <div class="form-group">
-                                                <input type="text" name="Nama Kursus" class="form-control" placeholder="Masukkan Nama Kursus Anda">
-                                            </div>
-                                            <h3>Kategori Kursus</h3>
-                                            <div class="form-group">
-                                                <input type="text" name="Kategori Kursus" class="form-control" placeholder="Masukkan Kategori Kursus Anda">
-                                            </div>
-                                            <h3>Penyusun</h3>
-                                            <div class="form-group">
-                                                <input type="text" name="Penyusun" class="form-control" placeholder="Masukkan Nama Penyusun Kursus">
-                                            </div>
+                                            <form id="form" style="margin-left: 1px">
+                                                <h3 style="margin-left: -15px;">Judul</h3>
+                                                <input type="text" name="Judul" class="form-control" style="margin-left: -15px; width: 117%;" placeholder="Masukkan Judul Anda">
+                                                <h3 style="margin-left: -15px;">Deskripsi</h3>
+                                                 <div class="form-group">
+                                                    <textarea id="informasi" name="Deskripsi" rows="6" cols="50" style="width: 95%; margin-left: -15px;" placeholder="Masukkan Deskripsi Konten"></textarea>
+                                                </div> 
+                                                <h3 style="margin-left: -15px;">Konten</h3>
+                                                <hr style="width: 45%; border-color: gray; text-align: left; border-width: 3px; margin-top: 0px; margin-left: -15px;">  
+                                                <input type="file" id="myFile" name="filename" style="margin-left: -15px;"> 
+                                                <div class="form-group">
+                                                    <a href="creatorpage.html"><button id="tambahkan" class="btn btn-tambahkan" style="margin-top: 87px; margin-right: -450px; float: right; height: 45px;"><input type="submit" value="Tambahkan" style="background-color: transparent; border-color: transparent; color: white; margin-top: -5px;"></button></a> 
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </section>
-                            <div class="col-lg-11 col-md-5 col-sm-12 col-xs-12">
-                                <div class="panel panel-danger">
-                                    <div class="panel-body">
-                                        <form id="form" style="margin-left: -5px">
-                                            <h3 style="font-size: 25px">Informasi</h3>
-                                            <hr style="width: 45%; border-color: gray; text-align: left; border-width: 3px; margin-top: 0px; margin-left: 0px;">
-                                             <div class="form-group">
-                                                 <textarea id="informasi" name="informasi" rows="6" cols="50" style="width: 110%;" placeholder="Masukkan Informasi Mengenai Kursus"></textarea>
-                                             </div>    
-                                        </form>
-                                        <div class="form-group">
-                                            <a href="creatorpage.html"><button id="tambahkan" class="btn btn-tambahkan">Tambahkan</button></a>
-                                       </div> 
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
