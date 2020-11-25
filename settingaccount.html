@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="frontend/styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
      <script src="http://code.jquery.com/jquery-latest.js"></script>
      <script src="frontend/scripts/function.js"></script>
 </head>
@@ -75,7 +78,69 @@
             </div>
         </nav>
     </div>
-
+    <main>
+        <section class="section-reward-details-header"></section>
+        <section class="section-reward-details-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col p-0">
+                        <nav>
+                            <ol class="breadcrumb">
+                                <a href="mycourse.html"><button id="back" style="margin-left: 190px; padding-right: 5px; margin-right: 20px; margin-left: -5px; border-color: rgba(0, 0, 0, 0.089);"><i class="fa fa-arrow-left"></i>  Kembali</button></a>
+                                <li class="breadcrumb-item">
+                                    Beranda
+                                </li>
+                                <li class="breadcrumb-item">
+                                    Akun
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Ubah Profil
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 pl-lg-0">
+                        <div class="card card-reward-details">
+                            <h1 style="margin-left: 15px;">Ubah Profil</h1>
+                            <hr style="width: 25%; border-color: gray; text-align: left; border-width: 3px; margin-top: 0px; margin-left: 15px;">
+                            <section class="section-product-content" id="rewardsContent">
+                                <div class="col-sm-4 col-md-6 col-lg-3" style="float: right;">
+                                    <div class="form-group">
+                                        <a href="accountpage.html"><button id="batalkan" class="btn btn-tambahkan" style="margin-top: 430px; margin-right: 160px; float: right; background-color: red; width: 120px;">Batalkan</button></a>
+                                   </div>
+                                </div>
+                                <div class="container">
+                                    <div class="section-rewards-product row">
+                                        <div class="col-sm-8 col-md-6 col-lg-9">
+                                            <form id="form" action="accountpage.html" style="margin-left: 1px">
+                                                <h3 style="margin-left: -15px;">Nama</h3>
+                                                <input type="text" name="nama" class="form-control" style="margin-left: -15px; width: 117%;" placeholder="Masukkan Nama Anda">
+                                                <h3 style="margin-left: -15px;">Sekolah</h3>
+                                                <input type="text" name="sekolah" class="form-control" style="margin-left: -15px; width: 117%;" placeholder="Masukkan Sekolah Anda">
+                                                <h3 style="margin-left: -15px;">Email</h3>
+                                                <input type="email" name="email" id="email" class="form-control" style="margin-left: -15px; width: 117%;" placeholder="Masukkan Email Anda">
+                                                <h3 style="margin-left: -15px;">Tanggal Lahir</h3>
+                                                <input id="datepicker" width="276"/>
+                                                <h3 style="margin-left: -15px;">Alamat</h3>
+                                                <input type="text" name="alamat" class="form-control" style="margin-left: -15px; width: 117%;" placeholder="Masukkan Alamat Anda">
+                                                <h3 style="margin-left: -15px;">Avatar</h3>  
+                                                <input type="file" id="myFile" name="filename" style="margin-left: -15px;"> 
+                                                <div class="form-group">
+                                                    <button id="ubah" type="submit" class="btn btn-tambahkan" style="margin-top: 77px; margin-right: -450px; float: right; height: 43px; width: 120px;">Ubah</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer section-footer mt-5 mb-4 border-top">
             <div class="container pt-5 pb-5">

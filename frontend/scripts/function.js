@@ -74,3 +74,6 @@ jQuery(function($) {
     $el.toggleClass('showDown');
   });
 });
+
+$('#datepicker').datepicker();
+
