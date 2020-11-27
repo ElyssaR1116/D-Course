@@ -101,50 +101,66 @@
                     </div>
                 </div>
             </div>
-            <aside style="float: left; margin-left: 200px;">
-                <div class="card">
-                    <h3> Konten Kursus </h3>
+            <aside style="float: left; width: 18%; padding-left: 20px; margin-left: 170px;">
+                <div class="profile card" style="height: 700px; ">
+                    <table class="table">
+                        <tr>
+                            <th style="background-color: #e4e6eb; text-align: center; font-size: 22px;">Konten Kursus</th>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <th style="background-color: #e4e6eb;">Part 1: Pengenalan Webex <button onclick="myFunction()" id="showbtn2" style="float: right; background-color: #e4e6eb; border-color: transparent;"><i class="fa fa-chevron-down"></i></button></th>
+                        </tr>
+                        <tr>
+                            <td id="show4" style="display: none;"><a href="contentcourse.html" style="color: black;">1. Cara Install & Membuat Akun Webex </a></td>
+                        </tr>
+                        <tr>
+                            <td id="show5" style="display: none;"><a href="#" style="color: black;">2. Informasi & Fitur-Fitur Webex </a></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <table class="table">
+                        <tr>
+                            <th style="background-color: #e4e6eb;">Part 2: Cara Menyelenggarakan Meeting <button style="float: right; background-color: #e4e6eb; border-color: transparent;"><i class="fa fa-chevron-down"></i></button></th>
+                        </tr>
+                    </table>
                 </div>
                 
             </aside>
-            <div class="container" style="float: right; padding-left: 100px; ">
+            <div class="container" style="float: right; margin-top: -700px; padding-left: 120px;  ">
                 <iframe width="750" height="450" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <a href="#" style="margin-top: 200px; color: grey; float: right; padding-left: 20px; margin-right: 200px;"><i class="fa fa-chevron-right fa-3x"></i></a>
                 <br>
+                <div class="dropdown" style="margin-right: 250px; margin-top: 10px; margin-bottom: 10px;">
+                    <i class="fa fa-bookmark fa-lg"style="float: right; padding-right: 35px; background-color: transparent; border-color: transparent;"></i>
+                    <i onclick="toShare()" class="fa fa-share-alt fa-lg menu" style="float: right; padding-right: 35px; background-color: transparent; border-color: transparent;"></i>
+                    <i class="fa fa-heart fa-lg" style="float: right; padding-right: 35px; padding-left: 35px; background-color: transparent; border-color: transparent;"></i>
+                    <div id="myDropdown" class="dropdown-content" style="margin-top: 20px; margin-right: -127px; min-width: 20px;">
+                        <a href="#ubah"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#hapus"><i class="fa fa-instagram"></i></a>
+                      </div>
+                    
+                </div>
                 <br>
                 <h3>Cara Install & Membuat Akun Webex</h3>
-                    <div class="tab">
-                        <button class="tablinks" onclick="openInfo(event, 'Informasi')">Deskripsi</button>
-                        <button class="tablinks" onclick="openInfo(event, 'Konten Kursus')">Forum Diskusi</button>
+                    <div class="tab" style="width: 25%;">
+                        <button class="tablinks" onclick="openInfo(event, 'Deskripsi')">Deskripsi</button>
+                        <button class="tablinks" onclick="openInfo(event, 'Forum Diskusi')">Forum Diskusi</button>
                       </div>
-                      <div id="Informasi" class="tabcontent">
-                        <h3 class="tabcontent-active">Informasi</h3>
+                      <div id="Deskripsi" class="tabcontent" style="width: 78%;">
+                        <h3 class="tabcontent-active">Deskripsi</h3>
                         <p></p>
                       </div>
-                      
-                      <div id="Konten Kursus" class="tabcontent">
-                        <table class="table">
-                            <tr>
-                                <th style="background-color: #e4e6eb;">Part 1: Pengenalan Webex <button onclick="myFunction()" id="showbtn2" style="float: right; background-color: #e4e6eb; border-color: transparent;"><i class="fa fa-chevron-down"></i></button></th>
-                            </tr>
-                            <tr>
-                                <td id="show4" style="display: none;"><a href="contentcourse.html" style="color: black;">1. Cara Install & Membuat Akun Webex </a></td>
-                            </tr>
-                            <tr>
-                                <td id="show5" style="display: none;"><a href="#" style="color: black;">2. Informasi & Fitur-Fitur Webex </a></td>
-                            </tr>
-                        </table>
-                        <br>
-                        <table class="table">
-                            <tr>
-                                <th style="background-color: #e4e6eb;">Part 2: Cara Menyelenggarakan Meeting <button style="float: right; background-color: #e4e6eb; border-color: transparent;"><i class="fa fa-chevron-down"></i></button></th>
-                            </tr>
-                        </table>
+                      <div id="Forum Diskusi" class="tabcontent" style="width: 78%;">
+                        <h3 class="tabcontent-active">Forum Diskusi</h3>
                       </div> 
             </div>
         </section>
        
     </main>
-    <footer style="padding-top: 300px;">
+    <footer style="padding-top: 150px;">
         <div class="footer section-footer mt-5 mb-4 border-top">
             <div class="container pt-5 pb-5">
                 <div class="row justify-content-center">

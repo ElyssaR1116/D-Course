@@ -25,6 +25,10 @@ function openInfo(evt, cityName) {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
+  function toShare() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
   // Close the dropdown if the user clicks outside of it
   window.onclick = function(event) {
     if (!event.target.matches('.menu')) {
@@ -38,17 +42,6 @@ function openInfo(evt, cityName) {
       }
     }
   }
-
- /* $(document).ready(function(){
-    $("#showbtn2").click(function(){
-        $("#show4").css("display","block");
-        $("#show5").css("display","block");
-    });
-    $("#showbtn2").click(function(){
-      $("show4").hide();
-      $("show5").hide();
-    });
-});*/
 
 function myFunction() {
   var x = document.getElementById("show4");
