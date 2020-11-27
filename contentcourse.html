@@ -83,7 +83,7 @@
                     <div class="col p-0">
                         <nav>
                             <ol class="breadcrumb">
-                                <a href="mycourse.html"><button id="back" style="margin-left: 190px; padding-right: 5px; margin-right: 20px; margin-left: -5px; border-color: rgba(0, 0, 0, 0.089);"><i class="fa fa-arrow-left"></i>  Kembali</button></a>
+                                <a href="userpage.html"><button id="back" style="margin-left: 190px; padding-right: 5px; margin-right: 20px; margin-left: -5px; border-color: rgba(0, 0, 0, 0.089);"><i class="fa fa-arrow-left"></i>  Kembali</button></a>
                                 <li class="breadcrumb-item">
                                     Beranda
                                 </li>
@@ -101,16 +101,51 @@
                     </div>
                 </div>
             </div>
-            <aside style="float: left;">
-                <h3>Konten Kursus</h3>
+            <aside style="float: left; margin-left: 200px;">
+                <div class="card">
+                    <h3> Konten Kursus </h3>
+                </div>
+                
             </aside>
-            <div class="container" style="float: right;">
-                <h3>Install</h3>
+            <div class="container" style="float: right; padding-left: 100px; ">
+                <iframe width="750" height="450" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <br>
+                <br>
+                <h3>Cara Install & Membuat Akun Webex</h3>
+                    <div class="tab">
+                        <button class="tablinks" onclick="openInfo(event, 'Informasi')">Informasi</button>
+                        <button class="tablinks" onclick="openInfo(event, 'Konten Kursus')">Konten Kursus</button>
+                        <button class="tablinks" onclick="openInfo(event, 'Forum Diskusi')">Forum Diskusi</button>
+                      </div>
+                      <div id="Informasi" class="tabcontent">
+                        <h3 class="tabcontent-active">Informasi</h3>
+                        <p></p>
+                      </div>
+                      
+                      <div id="Konten Kursus" class="tabcontent">
+                        <table class="table">
+                            <tr>
+                                <th style="background-color: #e4e6eb;">Part 1: Pengenalan Webex <button onclick="myFunction()" id="showbtn2" style="float: right; background-color: #e4e6eb; border-color: transparent;"><i class="fa fa-chevron-down"></i></button></th>
+                            </tr>
+                            <tr>
+                                <td id="show4" style="display: none;"><a href="contentcourse.html" style="color: black;">1. Cara Install & Membuat Akun Webex </a></td>
+                            </tr>
+                            <tr>
+                                <td id="show5" style="display: none;"><a href="#" style="color: black;">2. Informasi & Fitur-Fitur Webex </a></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <table class="table">
+                            <tr>
+                                <th style="background-color: #e4e6eb;">Part 2: Cara Menyelenggarakan Meeting <button style="float: right; background-color: #e4e6eb; border-color: transparent;"><i class="fa fa-chevron-down"></i></button></th>
+                            </tr>
+                        </table>
+                      </div> 
             </div>
         </section>
        
     </main>
-    <footer>
+    <footer style="padding-top: 300px;">
         <div class="footer section-footer mt-5 mb-4 border-top">
             <div class="container pt-5 pb-5">
                 <div class="row justify-content-center">
